@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #eee;
 }
 
 .parent {
@@ -44,36 +45,20 @@ body {
 }
 
 .div1 {
-  color: #aaa9a9;
-  background-color: black;
+  background-color: #212121;
   display: flex;
   gap: 3rem;
   justify-content: center;
 }
-.div1 .div-logos-marcas {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.div1 .div-logos-marcas .logos-marcas {
-  max-width: 4rem;
-}
-.div1 .div-contacto {
-  display: flex;
-  align-items: center;
-  font-size: 0.9rem;
-}
-.div1 .div-contacto .logos-contactos {
-  width: 1.6rem;
-  height: 1.6rem;
-}
-.div1 .div-contacto p {
-  margin: 0.5rem;
+.div1 .mi-nav img {
+  width: 2rem;
 }
 
-.div2 .mi-nav {
-  background-color: rgb(37, 37, 37);
+.div2 .mi-ul {
   justify-content: center;
+}
+.div2 .mi-ul a {
+  color: black;
 }
 .div2 img {
   max-width: 2rem;
