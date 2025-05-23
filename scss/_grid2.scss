@@ -1,11 +1,15 @@
 .div2 {
+    font-size: 1.2rem;
+    .mi-hover:hover {
+        color: #f0320a;
+        
+    }
     .mi-ul {
+        gap: 6rem;
         a{
             color: black;
         }
         justify-content: center;
     }
-    img {
-        max-width: 2rem;
-    }
+    
 }
