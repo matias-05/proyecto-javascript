@@ -38,16 +38,21 @@ body {
 }
 
 .div1 {
+  max-width: 100%;
   background-color: #212121;
   display: flex;
-  gap: 3rem;
+  flex-direction: row;
   justify-content: center;
 }
-.div1 .mi-nav img {
-  width: 2rem;
+.div1 .logo-empresa {
+  width: 5rem;
 }
-.div1 .mi-input {
-  width: 30rem;
+.div1 .input-busqueda {
+  width: 25rem;
+  height: 3rem;
+}
+.div1 .logo-lupa {
+  width: 2rem;
 }
 
 .div2 {
