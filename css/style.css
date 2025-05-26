@@ -13,46 +13,75 @@ body {
 .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(14, 1fr);
 }
 .parent .div1 {
-  grid-column: span 5/span 5;
+  grid-column: 1/6;
 }
 .parent .div2 {
-  grid-column: span 5/span 5;
-  grid-row-start: 2;
+  grid-column: 1/6;
+  grid-row: 2/2;
 }
 .parent .div3 {
-  grid-column: span 5/span 5;
-  grid-row: span 2/span 2;
-  grid-row-start: 3;
+  grid-column: 1/6;
+  grid-row: 3/8;
 }
 .parent .div4 {
-  grid-column: span 5/span 5;
-  grid-row: span 3/span 3;
-  grid-row-start: 5;
-}
-.parent .div5 {
-  grid-column: span 5/span 5;
-  grid-row-start: 8;
+  grid-column: 1/6;
+  grid-row: 8/10;
 }
 
 .div1 {
-  max-width: 100%;
+  max-height: 5rem;
   background-color: #212121;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-direction: row;
 }
 .div1 .logo-empresa {
   width: 5rem;
+  padding: 0.5rem;
 }
 .div1 .input-busqueda {
-  width: 25rem;
-  height: 3rem;
+  width: 30rem;
 }
-.div1 .logo-lupa {
-  width: 2rem;
+.div1 .button {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: #ec7259;
+  border-radius: 30px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: 0.5s;
+}
+.div1 .svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+.div1 .bell path {
+  fill: rgb(19, 19, 19);
+}
+.div1 .button:hover {
+  background-color: #f0320a;
+  transition-duration: 0.5s;
+}
+.div1 .button:active {
+  transform: scale(0.97);
+  transition-duration: 0.2s;
+}
+.div1 .button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
 }
 
 .div2 {
@@ -67,6 +96,15 @@ body {
 }
 .div2 .mi-ul a {
   color: black;
+}
+
+.div3 .mi-carousel {
+  height: 30rem;
+}
+.div3 .logos-carousel {
+  width: 40rem;
+  justify-self: center;
+  border-radius: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,19 +9,21 @@
 </head>
 <body>
     <div class="parent">
+
         <div class="div1">
             <img src="./media/logo-empresa.png" alt="Logo de la empresa" class="logo-empresa">
             <nav class="navbar">
-                
                 <div class="container-fluid mi-nav">
                     <form class="d-flex" role="search">
                     <input class="form-control me-2 input-busqueda" type="search" placeholder="Buscar" aria-label="Search"/>
-                    <button class="btn btn-dark button-busqueda" type="submit"><img src="./media/lupa.png" alt="Logo de busqueda" class="logo-lupa"></button>
+                    <button class="button">
+                    <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+                    Buscar
+                    </button>
                     </form>
                 </div>
             </nav>
         </div>
-
 
         <div class="div2">
             <ul class="nav justify-content-center mi-ul">
@@ -41,10 +43,38 @@
         </div>
 
         <div class="div3">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide mi-carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./media/setup-gamer.webp" class="d-block w-10 logos-carousel" alt="Imagen de set up gamer">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./media/R.jfif" class="d-block w-10 logos-carousel" alt="Imagen de set up gamer 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/componente.jpg" class="d-block w-10 logos-carousel" alt="Imagen de una placa de video">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="div4">
             
         </div>
-        <div class="div4">4</div>
-        <div class="div5">5</div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
