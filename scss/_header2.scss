@@ -2,7 +2,8 @@
     font-size: 1.1rem;
     .mi-hover:hover {
         color: #f0320a;
-        
+        font-size: 1.2rem;
+        transition: all .3s ease;
     }
     .mi-ul {
         gap: 6rem;
