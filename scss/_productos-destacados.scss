@@ -29,19 +29,21 @@
     }
 
     .card::after {
-        content: "Add to Cart";
+        content: "Agregar al carrito";
         padding-top: 1.25em;
-        padding-left: 1.25em;
+        
         position: absolute;
-        left: 0;
-        bottom: -60px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
         background: #f0320a;
         color: #fff;
-        height: 2.5em;
-        width: 90%;
+        height: 2.8em;
+        width: 100%;
         transition: all 80ms;
         font-weight: 600;
         text-transform: uppercase;
+        text-align: center;
         opacity: 0;
     }
 
@@ -74,7 +76,7 @@
     }
 
     .card:active::after {
-        content: "Added !";
+        content: "¡Agregado!";
         height: 3.125em;
     }
 
