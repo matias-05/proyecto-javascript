@@ -1,34 +1,85 @@
-// Variables
-const nombreTienda = "Compra Gaming Paraná";
-let carrito = [];
+//#region Productos en Stock
+const productos = [
+    { id: 1, nombre: "Notebook Asus", precio: 1000, stock: 4 },
+    { id: 2, nombre: "Auriculares Hyperx Cloud III Wireless", precio: 200, stock: 10 },
+    { id: 3, nombre: "Silla Gamer", precio: 260, stock: 2 }, 
+];
+//#endregion
 
-//Declaración de funciones
-function agregarAlCarrito(producto) {
-    carrito.push(producto);
+//#region Clase Carrito
+class Carrito {
+
+    constructor() {
+        this.cantidad = 0;
+        this.productosCarrito = [];
+    }
+
+    agregarProducto(id) {
+
+        const productoEcontrado = productos.find(p => p.id === id);
+
+        if (productoEcontrado.stock > 0) { 
+
+            this.productosCarrito.push({ producto: productoEcontrado});
+            this.cantidad++;
+            let cantidadCarrito = document.getElementById("cantidadCarrito");
+            cantidadCarrito.textContent = this.cantidad;
+            productoEcontrado.stock--;
+            return true;
+
+        } else {
+
+            return false;
+
+        }
+    }
+
+}
+//#endregion
+
+
+
+
+
+
+//#region Programa Principal
+const carrito = new Carrito();
+
+const botonesAgregar = document.querySelectorAll("#btnAgregar");
+
+botonesAgregar.forEach(boton => {
+    boton.addEventListener("click", () => {
+        const id = parseInt(boton.getAttribute("data-id"));
+        if (!carrito.agregarProducto(id)) {
+            alert("No hay stock disponible.");
+        }
+        guardarCarrito();
+        
+    });
+});
+
+
+//#endregion 
+
+
+function guardarCarrito() {
+    localStorage.setItem("carrito", JSON.stringify(carrito.productosCarrito));
 }
 
-
-//Inicio del programa
-alert(`¡Bienvenido a ${nombreTienda}!`);
-
-let cantidad = prompt("Ingresa cantidad de productos que deseas agregar al carrito:");
-
-for (let i = 0; i < cantidad; i++) {
-    
-    let producto = prompt("Ingresa el nombre del producto que deseas agregar al carrito ");
-
-    if (producto != null) {
-        agregarAlCarrito(producto);
-    } else {
-        alert(`El producto no es válido.`);
+function cargarCarrito() {
+    const datos = localStorage.getItem("carrito");
+    if (datos) {
+        const items = JSON.parse(datos);
+        items.forEach(item => {
+            const productoEnStock = productos.find(p => p.id === item.producto.id);
+                carrito.agregarProducto(productoEnStock.id);
+        });
     }
 }
 
-console.log("Productos en el carrito:");
-for (let i = 0; i < carrito.length; i++) {
-    console.log(`Producto ${i + 1} - ${carrito[i]}`);
-}
+cargarCarrito();
 
-
-
+document.querySelector("#carritoBtn").addEventListener("click", function() {
+    window.location.href = "../pages/carrito.html";
+});
 

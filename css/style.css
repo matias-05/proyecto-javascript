@@ -32,21 +32,28 @@ body {
   grid-row: 8/20;
 }
 
-.div1 {
+.parent .div1 {
   max-height: 5rem;
   background-color: #212121;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-.div1 .logo-empresa {
+.parent .div1 .logo-empresa {
   width: 5rem;
   padding: 0.5rem;
 }
-.div1 .input-busqueda {
+.parent .div1 .mi-nav .mi-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+.parent .div1 .mi-nav .mi-form .input-busqueda {
   width: 30rem;
 }
-.div1 .button {
+.parent .div1 .mi-nav .mi-form .button {
   width: 110px;
   height: 40px;
   display: flex;
@@ -60,29 +67,134 @@ body {
   border: none;
   position: relative;
   cursor: pointer;
-  transition-duration: 0.2s;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
   padding-left: 8px;
   transition-duration: 0.5s;
 }
-.div1 .svgIcon {
+.parent .div1 .mi-nav .mi-form .button .svgIcon {
   height: 25px;
   transition-duration: 1.5s;
 }
-.div1 .bell path {
-  fill: rgb(19, 19, 19);
-}
-.div1 .button:hover {
+.parent .div1 .mi-nav .mi-form .button:hover {
   background-color: #f0320a;
   transition-duration: 0.5s;
 }
-.div1 .button:active {
+.parent .div1 .mi-nav .mi-form .button:active {
   transform: scale(0.97);
   transition-duration: 0.2s;
 }
-.div1 .button:hover .svgIcon {
+.parent .div1 .mi-nav .mi-form .button:hover .svgIcon {
   transform: rotate(250deg);
   transition-duration: 1.5s;
+}
+.parent .div1 .mi-nav .mi-form .a {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.75em;
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.3) inset;
+  color: #fdea7b;
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+  padding: 0.15em;
+  width: 3em;
+  height: 1.5em;
+  transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+.parent .div1 .mi-nav .mi-form .a:before,
+.parent .div1 .mi-nav .mi-form .a:after {
+  content: "";
+  display: block;
+}
+.parent .div1 .mi-nav .mi-form .a:before {
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+  z-index: 1;
+}
+.parent .div1 .mi-nav .mi-form .a:after {
+  background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.15) 0) 0 50%/50% 100%, repeating-linear-gradient(90deg, #bbb 0, #bbb, #bbb 20%, #999 20%, #999 40%) 0 50%/50% 100%, radial-gradient(circle at 50% 50%, #888 25%, transparent 26%);
+  background-repeat: no-repeat;
+  border: 0.25em solid transparent;
+  border-left: 0.4em solid #d8d8d8;
+  border-right: 0 solid transparent;
+  transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+  transform: translateX(-22.5%);
+  transform-origin: 25% 50%;
+  width: 1.2em;
+  height: 1em;
+  box-sizing: border-box;
+}
+.parent .div1 .mi-nav .mi-form .a:checked {
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.1) inset;
+}
+.parent .div1 .mi-nav .mi-form .a:checked:before {
+  background-color: currentColor;
+  transform: translateX(125%);
+}
+.parent .div1 .mi-nav .mi-form .a:checked:after {
+  border-left-color: currentColor;
+  transform: translateX(-2.5%) rotateY(180deg);
+}
+.parent .div1 .mi-nav .mi-form .a:focus {
+  outline: 0;
+}
+.parent .div1 .mi-nav .mi-form .carritoBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  gap: 0.5em;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+.parent .div1 .mi-nav .mi-form .carritoBtn .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+.parent .div1 .mi-nav .mi-form .carritoBtn .cantidad {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  text-align: center;
+}
+.parent .div1 .mi-nav .mi-form .carritoBtn svg path {
+  transition: 400ms;
+  height: 1.5em;
+  width: 1.5em;
+  display: block;
+}
+.parent .div1 .mi-nav .mi-form .carritoBtn:hover {
+  background-color: transparent;
+}
+.parent .div1 .mi-nav .mi-form .carritoBtn:hover .text {
+  color: #f0320a;
+}
+.parent .div1 .mi-nav .mi-form .carritoBtn:hover svg path {
+  fill: #f0320a;
+}
+.parent .div1 .mi-nav .mi-form .bell path {
+  fill: rgb(19, 19, 19);
 }
 
 .div2 {
