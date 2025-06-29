@@ -37,11 +37,6 @@ class Carrito {
 }
 //#endregion
 
-
-
-
-
-
 //#region Programa Principal
 const carrito = new Carrito();
 
@@ -58,10 +53,13 @@ botonesAgregar.forEach(boton => {
     });
 });
 
+document.querySelector("#carritoBtn").addEventListener("click", function() {
+    window.location.href = "./pages/carrito.html";
+});
 
 //#endregion 
 
-
+//#region Local Storage
 function guardarCarrito() {
     localStorage.setItem("carrito", JSON.stringify(carrito.productosCarrito));
 }
@@ -76,10 +74,8 @@ function cargarCarrito() {
         });
     }
 }
-
 cargarCarrito();
+//#endregion
 
-document.querySelector("#carritoBtn").addEventListener("click", function() {
-    window.location.href = "../pages/carrito.html";
-});
+
 

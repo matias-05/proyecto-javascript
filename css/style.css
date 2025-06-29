@@ -197,29 +197,29 @@ body {
   fill: rgb(19, 19, 19);
 }
 
-.div2 {
+.parent .div2 {
   font-size: 1.1rem;
 }
-.div2 .mi-hover {
+.parent .div2 .mi-hover {
   transition: all 0.3s ease;
 }
-.div2 .mi-hover:hover {
+.parent .div2 .mi-hover:hover {
   color: #f0320a;
   font-size: 1.2rem;
   transition: all 0.3s ease;
 }
-.div2 .mi-ul {
+.parent .div2 .mi-ul {
   gap: 6rem;
   justify-content: center;
 }
-.div2 .mi-ul a {
+.parent .div2 .mi-ul a {
   color: black;
 }
 
-.div3 .mi-carousel {
+.parent .div3 .mi-carousel {
   height: 30rem;
 }
-.div3 .logos-carousel {
+.parent .div3 .logos-carousel {
   width: 40rem;
   justify-self: center;
   border-radius: 2rem;

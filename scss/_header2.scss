@@ -1,18 +1,22 @@
-.div2 {
-    font-size: 1.1rem;
-    .mi-hover {
-        transition: all .3s ease;
-    }
-    .mi-hover:hover {
-        color: #f0320a;
-        font-size: 1.2rem;
-        transition: all .3s ease;
-    }
-    .mi-ul {
-        gap: 6rem;
-        justify-content: center;
-        a{
-            color: black;
+.parent {
+    .div2 {
+        font-size: 1.1rem;
+        .mi-hover {
+            transition: all .3s ease;
+        }
+        .mi-hover:hover {
+            color: #f0320a;
+            font-size: 1.2rem;
+            transition: all .3s ease;
+        }
+        .mi-ul {
+            gap: 6rem;
+            justify-content: center;
+            a{
+                color: black;
+            }
         }
     }
 }
+
+
