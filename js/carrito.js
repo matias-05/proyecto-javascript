@@ -1,6 +1,7 @@
 const datos = localStorage.getItem("carrito");
 const contenedorCarrito = document.getElementById("contenedorCarrito");
 
+// Verifica si hay datos en el localStorage
 if (datos) {
     let items = JSON.parse(datos);
 
