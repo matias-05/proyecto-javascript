@@ -13,7 +13,7 @@ CSS3: estilos con diseño responsivo.
 JavaScript (Vanilla JS): lógica para añadir, remover y actualizar productos.
 
 
-🧠 Conceptos de JavaScript Aplicados
+**🧠 Conceptos de JavaScript Aplicados**
 1. 🧱 Estructuras Básicas
 Variables, condicionales (if, else, ternarios), bucles (for, while).
 
