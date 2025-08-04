@@ -1,6 +1,6 @@
-<h1>**🛒 Proyecto Carrito de Compras**</h1>
+<h1>🛒 Proyecto Carrito de Compras</h1>
 
-<h2>**Descripción**</h2>
+<h2>Descripción</h2>
 
 Este proyecto implementa una simulación de carrito de compras utilizando JavaScript, HTML, CSS y tecnologías adicionales. Permite agregar productos, actualizar cantidades, eliminar items y ver el total dinámicamente, simulando la experiencia de una tienda online.
 
