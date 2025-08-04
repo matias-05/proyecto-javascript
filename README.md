@@ -14,9 +14,9 @@ JavaScript (Vanilla JS): lógica para añadir, remover y actualizar productos.
 
 
 **🧠 Conceptos de JavaScript Aplicados**
+
 1. 🧱 Estructuras Básicas
 Variables, condicionales (if, else, ternarios), bucles (for, while).
-
 Se usan para controlar la lógica del carrito y del flujo de compra.
 
 2. 🧮 Funciones
