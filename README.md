@@ -13,6 +13,7 @@ LocalStorage: guarda datos del usuario en el navegador.
 
 
 🧠 Funcionalidades Principales
+
 Listado de productos con precio e imagen.
 
 Botón “Agregar al carrito” que añade un producto al carrito en caso  de haya stock.
