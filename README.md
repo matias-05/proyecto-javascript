@@ -1,4 +1,4 @@
-**🛒 Proyecto Carrito de Compras**
+<h1>**🛒 Proyecto Carrito de Compras**</h1>
 
 **Descripción**
 
