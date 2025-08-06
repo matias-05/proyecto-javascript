@@ -2,7 +2,7 @@
 
 <h2>Descripción</h2>
 
-Este proyecto implementa una simulación de carrito de compras utilizando JavaScript, HTML, CSS y tecnologías adicionales. Permite agregar productos, actualizar cantidades, eliminar items y ver el total dinámicamente, simulando la experiencia de una tienda online.
+Este proyecto implementa una simulación de carrito de compras utilizando JavaScript, HTML, CSS y tecnologías adicionales. Permite agregar productos, actualizar cantidades, eliminar items y ver el total dinámicamente.
 
 **🚀 Tecnologías Utilizadas**
 
